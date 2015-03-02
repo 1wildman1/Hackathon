@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>jQuery Mobile Bootstrap Theme</title>
+		<link rel="stylesheet" href="themes/Bootstrap.css">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        <script src="$ meteor add tomi:upload-server;
+            $ meteor add tomi:upload-jquery";
+            //file:/server/init.js
+                Meteor.startup(function () {
+                UploadServer.init({
+                tmpDir: '/Users/tomi/Documents/Uploads/tmp',
+                uploadDir: '/Users/tomi/Documents/Uploads/',
+                getDirectory: function(file, formData) {
+                return formData.contentType;
+            },
+                finished: function(file, folder, formFields) {
+                console.log('Write to database: ' + folder + '/' + file);
+            }
+  })
+});
+        </script>
+	</head>
+	<body> 
+                <a href="nav.html"><img src="logo1small.png" height="70%" width="100%"></a>       
+                <a href="nav.html"><img src="logo8short.png" height="70%" width="100%"></a>  
+	</body>
+</html>
